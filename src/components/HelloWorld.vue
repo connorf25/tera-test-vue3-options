@@ -1,6 +1,14 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <tera-file-select
+      :title="'Choose a citation library to screen...'"
+      :filters="{library: true}"
+      placeholder="Choose a citation library to screen..."
+      @change="fileUpload"
+      class="my-2"
+      style="background: #FFF"
+    />
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -31,10 +39,22 @@
 </template>
 
 <script>
+import TeraFileSelect from '@iebh/tera-fy/widgets/tera-file-select.vue'
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  components: {
+    TeraFileSelect
+  },
+  mounted() {
+    console.log(this.$tera)
+  },
+  methods: {
+    async fileUpload(file) {
+      console.log(file)
+    }
   }
 }
 </script>
