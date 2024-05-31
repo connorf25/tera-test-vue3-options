@@ -1085,10 +1085,10 @@
     htmlparser2 "^9.0.0"
     mitt "^3.0.1"
 
-"@iebh/tera-fy@^1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@iebh/tera-fy/-/tera-fy-1.7.0.tgz#529bdc6097fdcd32efb84515bd3417b96d4a4754"
-  integrity sha512-d4gBm0h5z3JaKbvW6QEX30BxlQorZYcWP1I0QawqHYM1q/VZtsIINBI8rEdm2FQf7q+EP/Wk/DBH/3LkxiK5ag==
+"@iebh/tera-fy@^1.7.3":
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/@iebh/tera-fy/-/tera-fy-1.7.3.tgz#1582a6e68fd264063b7b209895ef87212a898fe9"
+  integrity sha512-CwTqoq2M3pNlXaD0NXTOxceSadDIhGgacsygkfafKMx0m2C3kiKHOsn6yh4gRu5hz9d6a99K4GJoF0dq/ErTBw==
   dependencies:
     filesize "^10.1.1"
     just-diff "^6.0.2"

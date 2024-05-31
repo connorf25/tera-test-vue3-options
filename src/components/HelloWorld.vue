@@ -54,6 +54,9 @@ export default {
   methods: {
     async fileUpload(file) {
       console.log(file)
+      Promise.resolve()
+        .then(() => file.getRefs())
+        .then(refs => console.log(refs));
     }
   }
 }
